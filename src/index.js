@@ -6,12 +6,13 @@ import { Provider } from 'react-redux';
 import store from './store/configureStore';
 import './index.css';
 import App from './App';
+import history from './utils/history';
 import * as serviceWorker from './serviceWorker';
 
 const app = (
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App history={history} />
     </BrowserRouter>
   </Provider>
 );

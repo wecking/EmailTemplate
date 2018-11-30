@@ -16,6 +16,10 @@ const AsyncTemplate = asyncComponent(() => {
   return import('../containers/Template/Template');
 });
 
+const AsyncCreateTemplate = asyncComponent(() => {
+  return import('../containers/CreactTemplate/CreateTemplate');
+});
+
 class DashboardRoute extends Component {
   render() {
     return (
@@ -26,6 +30,10 @@ class DashboardRoute extends Component {
           <Switch>
             <Route path="/dashboard/overview" component={AsyncOverview} />
             <Route path="/dashboard/template" component={AsyncTemplate} />
+            <Route
+              path="/dashboard/create-template"
+              component={AsyncCreateTemplate}
+            />
             <Redirect to="/dashboard/overview" />
           </Switch>
         </section>

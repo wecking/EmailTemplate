@@ -29,11 +29,12 @@ class DashboardRoute extends Component {
         <section id="content-area">
           <Switch>
             <Route path="/dashboard/overview" component={AsyncOverview} />
-            <Route path="/dashboard/template" component={AsyncTemplate} />
             <Route
-              path="/dashboard/create-template"
+              exact
+              path="/dashboard/template/create"
               component={AsyncCreateTemplate}
             />
+            <Route path="/dashboard/template" component={AsyncTemplate} />
             <Redirect to="/dashboard/overview" />
           </Switch>
         </section>

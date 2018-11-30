@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import EmailEditor from 'react-email-editor';
 
-class CreateTemplate extends Component {
+export class CreateTemplate extends Component {
   exportHtml = () => {
     this.editor.exportHtml(data => {
       const { html } = data;

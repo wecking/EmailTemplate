@@ -6,7 +6,7 @@ class Template extends Component {
     return (
       <div>
         <div>
-          <NavLink to="/dashboard/create-template" className="btn btn-primary">
+          <NavLink to="/dashboard/template/create" className="btn btn-primary">
             Create Template
           </NavLink>
         </div>
